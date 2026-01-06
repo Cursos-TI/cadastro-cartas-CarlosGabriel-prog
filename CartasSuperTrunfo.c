@@ -7,48 +7,101 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
-  char estado;
-  char codigoCidade[10];
-  char nomeCidade[50];
-  int populacao;
-  float area;
-  float pib;
-  int pontosTuristicos;
+  char estado1[2];
+  char codigoCidade1[4];
+  char nomeCidade1[59];
+  int populacao1;
+  float area1;
+  float pib1;
+  int pontosTuristicos1;
+
+  char estado2[2];
+  char codigoCidade2[4];
+  char nomeCidade2[59];
+  int populacao2;
+  float area2;
+  float pib2;
+  int pontosTuristicos2;
 
   // Área para entrada de dados
 
   printf("Digite o nome do estado: ");
-  scanf("%s", &estado);//ok
+  scanf("%1s", &estado1);
 
   printf("Digite o código da cidade: ");
-  scanf("%s", &codigoCidade);//ok
+  scanf("%3s", &codigoCidade1);
 
   printf("Digite o nome da cidade: ");
-  scanf("%s", &nomeCidade);//ok
+  scanf("%58s", &nomeCidade1);
 
   printf("Qual a população da cidade: ");
-  scanf("%d", &populacao);
+  scanf("%d", &populacao1);
 
   printf("Qual a área da cidade: ");
-  scanf("%f", &area);
+  scanf("%f", &area1);
 
   printf("Qual o PIB da cidade: ");
-  scanf("%f", &pib);
+  scanf("%f", &pib1);
 
   printf("Quantos pontos turísticos a cidade possui: ");
-  scanf("%d", &pontosTuristicos);
+  scanf("%d", &pontosTuristicos1);
+
+  //espaço entre entrada de dados
+  printf("\n");
+  //espaço entre entrada de dados
+
+  printf("Digite o nome do estado: ");
+  scanf("%1s", &estado2);
+
+  printf("Digite o código da cidade: ");
+  scanf("%3s", &codigoCidade2);
+
+  printf("Digite o nome da cidade: ");
+  scanf("%58s", &nomeCidade2);
+
+  printf("Qual a população da cidade: ");
+  scanf("%d", &populacao2);
+
+  printf("Qual a área da cidade: ");
+  scanf("%f", &area2);
+
+  printf("Qual o PIB da cidade: ");
+  scanf("%f", &pib2);
+
+  printf("Quantos pontos turísticos a cidade possui: ");
+  scanf("%d", &pontosTuristicos2);
 
   // Área para exibição dos dados da cidade
 
+  printf("=============================\n");
   printf("DESAFIO SUPER TRUNFO - Países\n");
+  printf("=============================\n");
+  printf("\n");
   
-  printf("Estado: %s\n", estado);
-  printf("Código da Cidade: %s\n", codigoCidade);
-  printf("Nome da Cidade: %s\n", nomeCidade);
-  printf("População: %d\n", populacao);
-  printf("Área (em km²): %f\n", area);
-  printf("PIB: %f\n", pib);
-  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos);
+  printf("Estado: %s\n", estado1);
+  printf("Código da Cidade: %s\n", codigoCidade1);
+  printf("Nome da Cidade: %s\n", nomeCidade1);
+  printf("População: %d\n", populacao1);
+  printf("Área (em km²): %.2f km²\n", area1);
+  printf("PIB: %.2f bilhões de reais\n", pib1);
+  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+  printf("\n");
+
+  printf("=============================\n");
+  printf("=============================\n");
+  printf("\n");
+
+  printf("Estado: %s\n", estado2);
+  printf("Código da Cidade: %s\n", codigoCidade2);
+  printf("Nome da Cidade: %s\n", nomeCidade2);
+  printf("População: %d\n", populacao2);
+  printf("Área (em km²): %.2f km²\n", area2);
+  printf("PIB: %.2f bilhões de reais\n", pib2);
+  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+  printf("\n");
+
+  printf("=============================\n");
+  printf("=============================\n");
 
 return 0;
 }
